@@ -165,7 +165,7 @@
           <h1>Pastisseria La Dolça</h1>
         </div>
 
-        <button id="logout" class="btn">Tancar sessió</button>
+        <button id="logout" class="btn">Tancar Sessió</button>
       </nav>
     </header>
     <body>
@@ -178,7 +178,7 @@
           <!-- Formulario de creación -->
           <div class="card product-card edit-form-card">
             <h3 class="product-name">🍰 Crear Pastís 🍰</h3>
-            <form id="galetaForm" class="kawaii-form">
+            <form id="pastisForm" class="kawaii-form">
               <div class="form-group">
                 <label for="nom">🍰 Nom del pastís:</label>
                 <input type="text" id="nom" name="nom" placeholder="Escriu el nom del pastís..." required>
@@ -212,7 +212,7 @@
 
   <script>
     const logoutButton = document.getElementById("logout");
-    const galetaForm = document.getElementById("galetaForm");
+    const pastisForm = document.getElementById("pastisForm");
 
     // Logout functionality
     logoutButton?.addEventListener("click", (e) => {
@@ -227,14 +227,14 @@
       });
     });
 
-    // Submit form with POST method to create new galeta
-    galetaForm?.addEventListener("submit", async (e) => {
+    // Submit form with POST method to create new pastis
+    pastisForm?.addEventListener("submit", async (e) => {
       e.preventDefault();
       
-      const formData = new FormData(galetaForm);
+      const formData = new FormData(pastisForm);
       const ingredients = formData.get("ingredients").split(",").map(ing => ing.trim());
       
-      const galetaData = {
+      const pastisData = {
         nom: formData.get("nom"),
         img: formData.get("img"),
         preu: parseFloat(formData.get("preu")),
@@ -242,23 +242,23 @@
       };
 
       try {
-        const response = await fetch("/api/products/galeta", {
+        const response = await fetch("/api/products/pastis", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(galetaData)
+          body: JSON.stringify(pastisData)
         });
 
         if (response.ok) {
-          // Redirect to galetes list after successful creation
-          window.location.href = "/galetes";
+          // Redirect to pastissos list after successful creation
+          window.location.href = "/pastissos";
         } else {
-          alert("Error al crear la galeta. Por favor, inténtalo de nuevo.");
+          alert("Error al crear el pastís. Intenta-ho més tard.");
         }
       } catch (error) {
         console.error("Error:", error);
-        alert("Error al crear la galeta. Por favor, inténtalo de nuevo.");
+        alert("Error al crear el pastís. Intenta-ho més tard.");
       }
     });
   </script>

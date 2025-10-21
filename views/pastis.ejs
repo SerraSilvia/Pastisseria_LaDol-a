@@ -6,7 +6,41 @@
     <title>La Dolça - Detall Pastís</title>
     <link rel="stylesheet" href="/home.css" />
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="stylesheet" href="../public/styles.css" />    
+      <style>
+      .header-view {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 0 20px;
+      }
+      
+      .header-view h1 {
+        color: #d4746a;
+        font-size: 28px;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      }
+      
+      .edit-button {
+        text-decoration: none;
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+      
+      .edit-button:hover {
+        text-decoration: none;
+      }
+      
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .header-view {
+          flex-direction: column;
+          gap: 15px;
+          text-align: center;
+        }
+      }
+    </style>
 
   </head>
   <body>
@@ -73,8 +107,8 @@
               </div>
               
               <div class="form-buttons">
-                <button type="button" id="cancelButton" class="btn btn-secondary">❌ Cancel·lar</button>
-                <button type="submit" class="btn btn-success">💾 Guardar</button>
+                <button type="button" id="cancelButton" class="btn btn-secondary">CANCELAR</button>
+                <button type="submit" class="btn btn-success">GUARDAR</button>
               </div>
             </form>
           </div>

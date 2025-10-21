@@ -56,8 +56,8 @@
     <body>
       <div class="content">
         <div class="header-view">
-          <h1>Llista de pastissos</h1>
-          <a href="nou-pastis" class="btn edit-button">✏️ Afegir pastís</a>
+          <h1>Llista de Torrons</h1>
+          <a href="nou-torro" class="btn edit-button">✏️ Afegir Torró</a>
         </div>
         <div class="grid">
           <% data.forEach(product => { %>
@@ -70,7 +70,7 @@
               <span>Preu: €<%= product.preu %></span>
             </div>
             <div class="product-actions">
-              <a href="/pastis/<%=product.id %>" class="btn btn-primary">
+              <a href="/torro/<%=product.id %>" class="btn btn-primary">
                 Detalls
               </a>
               <button class="btn btn-secondary btn-delete" data-id="<%=product.id %>">
@@ -109,11 +109,11 @@
         const galetaId = button.getAttribute("data-id");
         
         // Confirmación kawaii
-        const confirmed = confirm(" Estàs segur que vols esborrar aquest pastís? Aquesta acció no es pot desfer! 🍰😢");
+        const confirmed = confirm(" Estàs segur que vols esborrar aquest torró? Aquesta acció no es pot desfer! 🍬😢");
         
         if (confirmed) {
           try {
-            const response = await fetch(`/api/products/pastis/${pastisId}`, {
+            const response = await fetch(`/api/products/torro/${torroId}`, {
               method: "DELETE",
               headers: {
                 "Content-Type": "application/json",
@@ -124,11 +124,11 @@
               // Recargar la página para mostrar la lista actualizada
               window.location.reload();
             } else {
-              alert("Error al esborrar el pastís. Torna-ho a provar més tard.");
+              alert("Error al esborrar el torró. Torna-ho a provar més tard.");
             }
           } catch (error) {
             console.error("Error:", error);
-            alert("Error al esborrar el pastís. Comprova la connexió i torna-ho a provar.");
+            alert("Error al esborrar el torró. Comprova la connexió i torna-ho a provar.");
           }
         }
       });
