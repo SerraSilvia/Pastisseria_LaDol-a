@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Dolça - Detall Pastís</title>
+    <link rel="stylesheet" href="/home.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="../public/styles.css" />    
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-header">
+          <img src="/logo_laDolca.png" alt="logo" />
+          <h1>Pastisseria La Dolça</h1>
+        </div>
+
+        <button id="logout" class="btn">Tancar sessió</button>
+      </nav>
+    </header>
+    <body>
+      <div class="content">
+        <div class="page-header">
+          <a href="/pastissos" class="btn back-button"> Tornar enrere</a>
+          <h1>✨ Detall del Pastís ✨</h1>
+          <button id="editButton" class="btn edit-button">✏️ Editar</button>
+        </div>
+        <div class="grid">
+          <div id="detailsCard" class="card product-card">
+            <h3 class="product-name">🍰 <%= pastis.nom %></h3>
+            <div class="product-main-content">
+              <div class="product-image">
+                <img src="<%= pastis.img %>" alt="<%= pastis.nom %>" />
+              </div>
+              <div class="product-ingredients">
+                <h4>Ingredients màgics 🌟</h4>
+                <ul class="ingredients-list">
+                  <% pastis.ingredients.forEach(function(ingredient) { %>
+                    <li class="ingredient-item">✧ <%= ingredient %></li>
+                  <% }); %>
+                </ul>
+              </div>
+            </div>
+            <div class="product-price">
+              <span>💰 Preu: €<%= pastis.preu %></span>
+            </div>
+          </div>
+
+          <!-- Formulario de edición (oculto por defecto) -->
+          <div id="editForm" class="card product-card edit-form-card" style="display: none;">
+            <h3 class="product-name">✨ Editar Pastís ✨</h3>
+            <form id="pastisForm" class="kawaii-form">
+              <div class="form-group">
+                <label for="nom">🍰 Nom del pastís:</label>
+                <input type="text" id="nom" name="nom" value="<%= pastis.nom %>" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="img"> URL de la imatge:</label>
+                <input type="url" id="img" name="img" value="<%= pastis.img %>" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="preu">💰 Preu (€):</label>
+                <input type="number" id="preu" name="preu" value="<%= pastis.preu %>" step="0.01" min="0" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="ingredients">🌟 Ingredients (separats per comes):</label>
+                <textarea id="ingredients" name="ingredients" rows="4" required><%= pastis.ingredients.join(', ') %></textarea>
+              </div>
+              
+              <div class="form-buttons">
+                <button type="button" id="cancelButton" class="btn btn-secondary">❌ Cancel·lar</button>
+                <button type="submit" class="btn btn-success">💾 Guardar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </body>
+  </body>
+
+  <script>
+    const logoutButton = document.getElementById("logout");
+    const editButton = document.getElementById("editButton");
+    const cancelButton = document.getElementById("cancelButton");
+    const detailsCard = document.getElementById("detailsCard");
+    const editForm = document.getElementById("editForm");
+    const pastisForm = document.getElementById("pastisForm");
+
+    // Logout functionality
+    logoutButton?.addEventListener("click", (e) => {
+      e.preventDefault();
+      fetch("/api/auth/logout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }).then((res) => {
+        window.location.href = "/";
+      });
+    });
+
+    // Show edit form
+    editButton?.addEventListener("click", (e) => {
+      e.preventDefault();
+      detailsCard.style.display = "none";
+      editForm.style.display = "block";
+      editButton.style.display = "none";
+    });
+
+    // Cancel edit (show details)
+    cancelButton?.addEventListener("click", (e) => {
+      e.preventDefault();
+      editForm.style.display = "none";
+      detailsCard.style.display = "block";
+      editButton.style.display = "block";
+    });
+
+    // Submit form with PUT method
+    pastisForm?.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(pastisForm);
+      const ingredients = formData.get("ingredients").split(",").map(ing => ing.trim());
+      
+      const pastisData = {
+        nom: formData.get("nom"),
+        img: formData.get("img"),
+        preu: parseFloat(formData.get("preu")),
+        ingredients: ingredients
+      };
+
+      try {
+        const response = await fetch(`/api/products/pastis/<%= pastis.id %>`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(pastisData)
+        });
+
+        if (response.ok) {
+          // Reload the page to show updated data
+          window.location.reload();
+        } else {
+          alert("Error al guardar los cambios. Por favor, inténtalo de nuevo.");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        alert("Error al guardar los cambios. Por favor, inténtalo de nuevo.");
+      }
+    });
+  </script>
+</html>

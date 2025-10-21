@@ -1,36 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>La Dolça</title>
-    <link rel="stylesheet" href="../public/styles.css" />
-  </head>
-  <body>
-    <header>
-      <img src="../public/logo_laDolca.png" alt="logo" />
-      <h1>Pastisseria La Dolça</h1>
-    </header>
-    <body>
-      <ul class="menu">
-        <li>
-            <img src="../public/cakes.jpg" alt="pastissos">
-            <a href="/pastissos">Veure pastissos</a>
-        </li>
-        <li>
-            <img src="../public/cookies.jpg" alt="galetes">
-            <a href="/galetes">Veure galetes</a>
-        </li>
-        <li>
-            <img src="../public/torrons.png" alt="torrons">
-            <a href="/torrons">Veure torrons</a>
-        </li>
-      </ul>
-    </body>
-  </body>
-</html>
-=======
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -39,6 +6,41 @@
     <title>La Dolça</title>
     <link rel="stylesheet" href="/home.css" />
     <link rel="stylesheet" href="/styles.css" />
+     <style>
+      .header-view {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 0 20px;
+      }
+      
+      .header-view h1 {
+        color: #d4746a;
+        font-size: 28px;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      }
+      
+      .edit-button {
+        text-decoration: none;
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+      
+      .edit-button:hover {
+        text-decoration: none;
+      }
+      
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .header-view {
+          flex-direction: column;
+          gap: 15px;
+          text-align: center;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -92,4 +94,3 @@
     });
   </script>
 </html>
->>>>>>> c87b790 (feat: Implement server setup with Express, JWT authentication, and cookie parsing)
