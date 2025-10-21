@@ -1,0 +1,338 @@
+{
+  "galetes": [
+    {
+      "id": 1,
+      "nom": "Galetes de Xocolata",
+      "img": "https://st5.depositphotos.com/59324920/62074/v/450/depositphotos_620749460-stock-illustration-cute-funny-chocolate-cookies-sticker.jpg",
+      "ingredients": [
+        "farina",
+        "mantega",
+        "sucre",
+        "ous",
+        "xips de xocolata",
+        "limon"
+      ],
+      "preu": 4.8
+    },
+    {
+      "id": 2,
+      "nom": "Galetes de Civada",
+      "img": "https://ih1.redbubble.net/image.606700405.9267/mp,840x830,matte,f8f8f8,t-pad,1000x1000,f8f8f8.u2.jpg",
+      "ingredients": [
+        "civada",
+        "mantega",
+        "sucre morè",
+        "ous",
+        "panses"
+      ],
+      "preu": 4.2
+    },
+    {
+      "id": 3,
+      "nom": "Galetes de Llimona",
+      "img": "https://i.pinimg.com/564x/41/d9/dc/41d9dcf337dc5b07b92b450967ad5a7e.jpg",
+      "ingredients": [
+        "farina",
+        "mantega",
+        "sucre",
+        "llimona ratllada",
+        "ous"
+      ],
+      "preu": 4
+    },
+    {
+      "id": 4,
+      "nom": "Galetes de Coco",
+      "img": "https://images.teepublic.com/derived/production/designs/2290233_0/1516317859/i_p:c_ff9c8a,s_630,q_90.jpg",
+      "ingredients": [
+        "farina",
+        "mantega",
+        "coco ratllat",
+        "sucre",
+        "ous"
+      ],
+      "preu": 4.3
+    },
+    {
+      "id": 5,
+      "nom": "Galetes de Gingebre",
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg2CQfDVuzir6K-wKu8Al7CM7UC11utWYyhA&s",
+      "ingredients": [
+        "farina",
+        "mantega",
+        "sucre morè",
+        "gingebre",
+        "melassa"
+      ],
+      "preu": 4.6
+    },
+    {
+      "id": 7,
+      "nom": "Galeta de Gerds",
+      "img": "https://png.pngtree.com/png-clipart/20200225/original/pngtree-biscuit-with-strawberry-cream-vector-illustration-isolated-on-white-background-cute-png-image_5267252.jpg",
+      "preu": 3.81,
+      "ingredients": [
+        "farina",
+        "sucre",
+        "gerds",
+        "melmelada"
+      ]
+    }
+  ],
+  "pastissos": [
+    {
+      "id": 1,
+      "nom": "Pastís de Xocolata",
+      "img": "https://example.com/img/pastis-xocolata.jpg",
+      "ingredients": [
+        "farina",
+        "ous",
+        "sucre",
+        "cacau",
+        "mantega"
+      ],
+      "preu": 15.99
+    },
+    {
+      "id": 2,
+      "nom": "Pastís de Vainilla",
+      "img": "https://example.com/img/pastis-vainilla.jpg",
+      "ingredients": [
+        "farina",
+        "ous",
+        "sucre",
+        "llet",
+        "essència de vainilla"
+      ],
+      "preu": 13.5
+    },
+    {
+      "id": 3,
+      "nom": "Pastís de Maduixa",
+      "img": "https://example.com/img/pastis-maduixa.jpg",
+      "ingredients": [
+        "farina",
+        "ous",
+        "sucre",
+        "maduixes",
+        "nata"
+      ],
+      "preu": 16.25
+    },
+    {
+      "id": 4,
+      "nom": "Pastís de Pastanaga",
+      "img": "https://example.com/img/pastis-pastanaga.jpg",
+      "ingredients": [
+        "farina",
+        "pastanaga ratllada",
+        "nous",
+        "ous",
+        "sucre morè"
+      ],
+      "preu": 14.75
+    },
+    {
+      "id": 5,
+      "nom": "Pastís de Llimona",
+      "img": "https://example.com/img/pastis-llimona.jpg",
+      "ingredients": [
+        "farina",
+        "ous",
+        "sucre",
+        "llimona",
+        "mantega"
+      ],
+      "preu": 13.9
+    },
+    {
+      "id": 6,
+      "nom": "Pastís de Formatge",
+      "img": "https://example.com/img/pastis-formatge.jpg",
+      "ingredients": [
+        "formatge cremós",
+        "ous",
+        "sucre",
+        "galetes",
+        "mantega"
+      ],
+      "preu": 18
+    },
+    {
+      "id": 7,
+      "nom": "Pastís Red Velvet",
+      "img": "https://example.com/img/pastis-red-velvet.jpg",
+      "ingredients": [
+        "farina",
+        "cacau",
+        "colorant vermell",
+        "ous",
+        "buttermilk"
+      ],
+      "preu": 17.5
+    },
+    {
+      "id": 8,
+      "nom": "Pastís de Coco",
+      "img": "https://example.com/img/pastis-coco.jpg",
+      "ingredients": [
+        "farina",
+        "ous",
+        "sucre",
+        "llet de coco",
+        "coco ratllat"
+      ],
+      "preu": 14.2
+    },
+    {
+      "id": 9,
+      "nom": "Pastís de Poma",
+      "img": "https://example.com/img/pastis-poma.jpg",
+      "ingredients": [
+        "farina",
+        "pomes",
+        "canyella",
+        "sucre",
+        "ous"
+      ],
+      "preu": 15.1
+    },
+    {
+      "id": 10,
+      "nom": "Pastís Tres Llets",
+      "img": "https://example.com/img/pastis-tres-llets.jpg",
+      "ingredients": [
+        "farina",
+        "ous",
+        "sucre",
+        "llet condensada",
+        "llet evaporada",
+        "nata"
+      ],
+      "preu": 16.8
+    }
+  ],
+  "torrons": [
+    {
+      "id": 1,
+      "nom": "Torró de Alacant",
+      "img": "https://example.com/img/torro-alacant.jpg",
+      "ingredients": [
+        "ametlles",
+        "mel",
+        "ou",
+        "sucre"
+      ],
+      "preu": 8.5
+    },
+    {
+      "id": 2,
+      "nom": "Torró de Xixona",
+      "img": "https://example.com/img/torro-xixona.jpg",
+      "ingredients": [
+        "ametlles mòltes",
+        "mel",
+        "sucre",
+        "ou"
+      ],
+      "preu": 8.2
+    },
+    {
+      "id": 3,
+      "nom": "Torró de Xocolata amb Ametlles",
+      "img": "https://example.com/img/torro-xocolata-ametlles.jpg",
+      "ingredients": [
+        "xocolata negra",
+        "ametlles torrades",
+        "mantega de cacau",
+        "sucre"
+      ],
+      "preu": 9
+    },
+    {
+      "id": 4,
+      "nom": "Torró de Yema Tostada",
+      "img": "https://example.com/img/torro-gemma-tostada.jpg",
+      "ingredients": [
+        "ou",
+        "sucre",
+        "ametlla mòlta",
+        "llimona"
+      ],
+      "preu": 9.5
+    },
+    {
+      "id": 5,
+      "nom": "Torró de Xocolata Blanca amb Avellanes",
+      "img": "https://example.com/img/torro-xocolata-blanca-avellanes.jpg",
+      "ingredients": [
+        "xocolata blanca",
+        "avellanes",
+        "sucre",
+        "llet en pols"
+      ],
+      "preu": 9.2
+    },
+    {
+      "id": 6,
+      "nom": "Torró de Coco",
+      "img": "https://example.com/img/torro-coco.jpg",
+      "ingredients": [
+        "coco ratllat",
+        "sucre",
+        "mel",
+        "clara de ou"
+      ],
+      "preu": 8.7
+    },
+    {
+      "id": 7,
+      "nom": "Torró de Trufa",
+      "img": "https://example.com/img/torro-trufa.jpg",
+      "ingredients": [
+        "xocolata negra",
+        "nata",
+        "mantega",
+        "licor suau"
+      ],
+      "preu": 9.8
+    },
+    {
+      "id": 8,
+      "nom": "Torró de Crema Catalana",
+      "img": "https://example.com/img/torro-crema-catalana.jpg",
+      "ingredients": [
+        "llet",
+        "rovells d'ou",
+        "sucre",
+        "llimona",
+        "canyella"
+      ],
+      "preu": 10
+    },
+    {
+      "id": 9,
+      "nom": "Torró de Xocolata amb Arròs Inflat",
+      "img": "https://example.com/img/torro-xocolata-arros.jpg",
+      "ingredients": [
+        "xocolata amb llet",
+        "arròs inflat",
+        "mantega de cacau",
+        "sucre"
+      ],
+      "preu": 8.9
+    },
+    {
+      "id": 10,
+      "nom": "Torró de Pistatxo",
+      "img": "https://example.com/img/torro-pistatxo.jpg",
+      "ingredients": [
+        "pistatxos",
+        "mel",
+        "sucre",
+        "ou"
+      ],
+      "preu": 9.6
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Dolça</title>
+    <link rel="stylesheet" href="/home.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .header-view {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 0 20px;
+      }
+      
+      .header-view h1 {
+        color: #d4746a;
+        font-size: 28px;
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      }
+      
+      .edit-button {
+        text-decoration: none;
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+      
+      .edit-button:hover {
+        text-decoration: none;
+      }
+      
+      /* Responsive design */
+      @media (max-width: 768px) {
+        .header-view {
+          flex-direction: column;
+          gap: 15px;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-header">
+          <img src="/logo_laDolca.png" alt="logo" />
+          <h1>Pastisseria La Dolça</h1>
+        </div>
+
+        <button id="logout" class="btn">Tancar sessió</button>
+      </nav>
+    </header>
+    <body>
+      <div class="content">
+        <div class="header-view">
+          <h1>Llista de pastissos</h1>
+          <a href="nou-pastis" class="btn edit-button">✏️ Afegir pastís</a>
+        </div>
+        <div class="grid">
+          <% data.forEach(product => { %>
+          <div class="card product-card">
+            <h3 class="product-name"><%= product.nom %></h3>
+            <div class="product-image">
+              <img src="<%= product.img %>" alt="<%= product.nom %>" />
+            </div>
+            <div class="product-price">
+              <span>Preu: €<%= product.preu %></span>
+            </div>
+            <div class="product-actions">
+              <a href="/pastis/<%=product.id %>" class="btn btn-primary">
+                Detalls
+              </a>
+              <button class="btn btn-secondary btn-delete" data-id="<%=product.id %>">
+                Esborrar
+              </button>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+    </body>
+  </body>
+
+  <script>
+    const logoutButton = document.getElementById("logout");
+    const deleteButtons = document.querySelectorAll(".btn-delete");
+
+    // Logout functionality
+    logoutButton?.addEventListener("click", (e) => {
+      e.preventDefault();
+      fetch("/api/auth/logout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }).then((res) => {
+        window.location.href = "/";
+      });
+    });
+
+    // Delete functionality
+    deleteButtons.forEach(button => {
+      button.addEventListener("click", async (e) => {
+        e.preventDefault();
+        
+        const galetaId = button.getAttribute("data-id");
+        
+        // Confirmación kawaii
+        const confirmed = confirm(" Estàs segur que vols esborrar aquest pastís? Aquesta acció no es pot desfer! 🍪😢");
+        
+        if (confirmed) {
+          try {
+            const response = await fetch(`/api/products/pastis/${pastisId}`, {
+              method: "DELETE",
+              headers: {
+                "Content-Type": "application/json",
+              },
+            });
+
+            if (response.ok) {
+              // Recargar la página para mostrar la lista actualizada
+              window.location.reload();
+            } else {
+              alert("❌ Error al esborrar el pastís. Torna-ho a provar més tard.");
+            }
+          } catch (error) {
+            console.error("Error:", error);
+            alert("❌ Error al esborrar el pastís. Comprova la connexió i torna-ho a provar.");
+          }
+        }
+      });
+    });
+  </script>
+</html>
