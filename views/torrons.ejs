@@ -6,26 +6,12 @@
     <title>La Dolça</title>
     <link rel="stylesheet" href="/home.css" />
     <link rel="stylesheet" href="/styles.css" />
-    <style>
-      .header-view {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 30px;
-        padding: 0 20px;
-      }
-      
+    <style>  
       .header-view h1 {
         color: #d4746a;
         font-size: 28px;
         margin: 0;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-      }
-      
-      .edit-button {
-        text-decoration: none;
-        font-size: 16px;
-        padding: 12px 20px;
       }
       
       .edit-button:hover {
@@ -57,7 +43,10 @@
       <div class="content">
         <div class="header-view">
           <h1>Llista de Torrons</h1>
-          <a href="nou-torro" class="btn edit-button">✏️ Afegir Torró</a>
+          <div class="header-buttons">
+            <a href="javascript:history.back()" class="btn back-button"> Tornar enrere</a>
+            <a href="nou-torro" class="btn edit-button">✏️ Afegir Torró</a>
+          </div>
         </div>
         <div class="grid">
           <% data.forEach(product => { %>

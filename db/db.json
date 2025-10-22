@@ -169,13 +169,27 @@
         "buttermilk"
       ],
       "preu": 17.5
+    },
+    {
+      "id": 8,
+      "nom": "Pastís de Nata",
+      "img": "https://static.vecteezy.com/system/resources/previews/023/374/489/non_2x/cute-kawaii-cake-chibi-mascot-cartoon-style-vector.jpg",
+      "preu": 13.5,
+      "ingredients": [
+        "farina",
+        "nata",
+        "ous",
+        "sucre",
+        "llet",
+        "cuajada"
+      ]
     }
   ],
   "torrons": [
     {
       "id": 1,
       "nom": "Torró de Alacant",
-      "img": "https://example.com/img/torro-alacant.jpg",
+      "img": "https://media.istockphoto.com/id/1417884651/es/vector/vector-plano-de-piezas-de-turr%C3%B3n-de-delicia-turca-ilustraci%C3%B3n-vectorial-plana-aislada-sobre.jpg?s=612x612&w=0&k=20&c=fl9r-FTd6Fh-ZsLGmRIeU8EENy6uP15vivzpntRI740=",
       "ingredients": [
         "ametlles",
         "mel",
@@ -187,7 +201,7 @@
     {
       "id": 2,
       "nom": "Torró de Xixona",
-      "img": "https://example.com/img/torro-xixona.jpg",
+      "img": "https://img.freepik.com/vector-premium/ilustracion-vectorial-icono-dibujos-animados-soja-fermentada-tempeh_1324823-13710.jpg?semt=ais_hybrid&w=740&q=80",
       "ingredients": [
         "ametlles mòltes",
         "mel",
@@ -197,21 +211,9 @@
       "preu": 8.2
     },
     {
-      "id": 3,
-      "nom": "Torró de Xocolata amb Ametlles",
-      "img": "https://example.com/img/torro-xocolata-ametlles.jpg",
-      "ingredients": [
-        "xocolata negra",
-        "ametlles torrades",
-        "mantega de cacau",
-        "sucre"
-      ],
-      "preu": 9
-    },
-    {
       "id": 4,
       "nom": "Torró de Yema Tostada",
-      "img": "https://example.com/img/torro-gemma-tostada.jpg",
+      "img": "https://img.freepik.com/vector-premium/primer-plano-deliciosa-barra-caramelo-chocolate_1286864-1744.jpg?w=360",
       "ingredients": [
         "ou",
         "sucre",
@@ -221,33 +223,9 @@
       "preu": 9.5
     },
     {
-      "id": 5,
-      "nom": "Torró de Xocolata Blanca amb Avellanes",
-      "img": "https://example.com/img/torro-xocolata-blanca-avellanes.jpg",
-      "ingredients": [
-        "xocolata blanca",
-        "avellanes",
-        "sucre",
-        "llet en pols"
-      ],
-      "preu": 9.2
-    },
-    {
-      "id": 6,
-      "nom": "Torró de Coco",
-      "img": "https://example.com/img/torro-coco.jpg",
-      "ingredients": [
-        "coco ratllat",
-        "sucre",
-        "mel",
-        "clara de ou"
-      ],
-      "preu": 8.7
-    },
-    {
       "id": 7,
       "nom": "Torró de Trufa",
-      "img": "https://example.com/img/torro-trufa.jpg",
+      "img": "https://img.freepik.com/vector-premium/icono-snack-bar-nueces-isometrico-icono-vector-snack-bar-nueces-diseno-web-aislado-sobre-fondo-blanco_96318-59044.jpg?semt=ais_incoming&w=740&q=80",
       "ingredients": [
         "xocolata negra",
         "nata",
@@ -259,7 +237,7 @@
     {
       "id": 9,
       "nom": "Torró de Xocolata amb Arròs Inflat",
-      "img": "https://example.com/img/torro-xocolata-arros.jpg",
+      "img": "https://img.freepik.com/vector-premium/barra-muesli-bocadillo-casero-saludable-patron-zigzag-chocolate-negro-postre-vegano-organico_456865-825.jpg?semt=ais_hybrid&w=740&q=80",
       "ingredients": [
         "xocolata amb llet",
         "arròs inflat",
@@ -270,15 +248,28 @@
     },
     {
       "id": 10,
-      "nom": "Torró de Pistatxo",
-      "img": "https://example.com/img/torro-pistatxo.jpg",
+      "nom": "Torró de Festucs",
+      "img": "https://thumbs.dreamstime.com/b/ilustraci%C3%B3n-de-nougat-dibujo-nueces-o-torrone-vectorial-dibujos-animados-aislados-209107287.jpg",
       "ingredients": [
-        "pistatxos",
+        "festucs",
         "mel",
         "sucre",
         "ou"
       ],
       "preu": 9.6
+    },
+    {
+      "id": 7,
+      "nom": "Assortit de Torrons",
+      "img": "https://img.freepik.com/vector-premium/variedad-barras-granola-bocadillos-saludables_1313002-10542.jpg?semt=ais_hybrid&w=740&q=80",
+      "preu": 20,
+      "ingredients": [
+        "ametlles",
+        "arròs",
+        "festucs",
+        "sucre",
+        "ou"
+      ]
     }
   ]
 }
