@@ -82,7 +82,7 @@
     {
       "id": 1,
       "nom": "Pastís de Xocolata",
-      "img": "https://example.com/img/pastis-xocolata.jpg",
+      "img": "https://i.pinimg.com/736x/93/35/25/9335250b562a334f5bfae286282564bb.jpg",
       "ingredients": [
         "farina",
         "ous",
@@ -95,7 +95,7 @@
     {
       "id": 2,
       "nom": "Pastís de Vainilla",
-      "img": "https://example.com/img/pastis-vainilla.jpg",
+      "img": "https://www.shutterstock.com/image-vector/vector-cute-kawaii-vanilla-pudding-260nw-2252709451.jpg",
       "ingredients": [
         "farina",
         "ous",
@@ -108,7 +108,7 @@
     {
       "id": 3,
       "nom": "Pastís de Maduixa",
-      "img": "https://example.com/img/pastis-maduixa.jpg",
+      "img": "https://img.freepik.com/vector-premium/pastel-fresa-kawaii_1228438-316.jpg",
       "ingredients": [
         "farina",
         "ous",
@@ -121,7 +121,7 @@
     {
       "id": 4,
       "nom": "Pastís de Pastanaga",
-      "img": "https://example.com/img/pastis-pastanaga.jpg",
+      "img": "https://squishable.com/cdn/shop/files/comortfood_mini_carrot_cake_design.jpg?v=1721936387",
       "ingredients": [
         "farina",
         "pastanaga ratllada",
@@ -134,7 +134,7 @@
     {
       "id": 5,
       "nom": "Pastís de Llimona",
-      "img": "https://example.com/img/pastis-llimona.jpg",
+      "img": "data:image/jpeg;base64,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",
       "ingredients": [
         "farina",
         "ous",
@@ -147,7 +147,7 @@
     {
       "id": 6,
       "nom": "Pastís de Formatge",
-      "img": "https://example.com/img/pastis-formatge.jpg",
+      "img": "https://thumbs.dreamstime.com/b/cute-slice-cheesecake-smiling-face-vibrant-strawberry-top-400485140.jpg",
       "ingredients": [
         "formatge cremós",
         "ous",
@@ -160,7 +160,7 @@
     {
       "id": 7,
       "nom": "Pastís Red Velvet",
-      "img": "https://example.com/img/pastis-red-velvet.jpg",
+      "img": "https://ih1.redbubble.net/image.4855411228.5280/st,small,507x507-pad,600x600,f8f8f8.u1.jpg",
       "ingredients": [
         "farina",
         "cacau",
@@ -169,46 +169,6 @@
         "buttermilk"
       ],
       "preu": 17.5
-    },
-    {
-      "id": 8,
-      "nom": "Pastís de Coco",
-      "img": "https://example.com/img/pastis-coco.jpg",
-      "ingredients": [
-        "farina",
-        "ous",
-        "sucre",
-        "llet de coco",
-        "coco ratllat"
-      ],
-      "preu": 14.2
-    },
-    {
-      "id": 9,
-      "nom": "Pastís de Poma",
-      "img": "https://example.com/img/pastis-poma.jpg",
-      "ingredients": [
-        "farina",
-        "pomes",
-        "canyella",
-        "sucre",
-        "ous"
-      ],
-      "preu": 15.1
-    },
-    {
-      "id": 10,
-      "nom": "Pastís Tres Llets",
-      "img": "https://example.com/img/pastis-tres-llets.jpg",
-      "ingredients": [
-        "farina",
-        "ous",
-        "sucre",
-        "llet condensada",
-        "llet evaporada",
-        "nata"
-      ],
-      "preu": 16.8
     }
   ],
   "torrons": [
