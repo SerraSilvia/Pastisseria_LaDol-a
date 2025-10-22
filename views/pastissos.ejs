@@ -43,6 +43,7 @@
     </style>
   </head>
   <body>
+  
     <header>
       <nav class="navbar">
         <div class="logo-header">
@@ -106,7 +107,8 @@
       button.addEventListener("click", async (e) => {
         e.preventDefault();
         
-        const galetaId = button.getAttribute("data-id");
+        const pastisId = button.getAttribute("data-id");
+
         
         // Confirmación kawaii
         const confirmed = confirm(" Estàs segur que vols esborrar aquest pastís? Aquesta acció no es pot desfer! 🍰😢");
